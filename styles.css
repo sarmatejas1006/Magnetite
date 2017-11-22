@@ -1,0 +1,33 @@
+/*===== STYLOWANIE SLIDER1-MARKUP =====*/
+
+.start_note{
+}
+
+.experiment_note{
+    visibility: hidden;
+}
+
+.slider-1 {
+    float: right;
+    position: relative;
+    width: 450px;
+    min-height: 450px;
+    background-color: rgb(252,252,252);
+    margin-right: 70px;
+}
+
+.icon {
+  position: absolute;
+  background-color: rgb(252, 252, 252);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.icon-0 {
+  z-index: 2;
+  width: 74px;
+  height: 74px;
+  border: 8px solid rgb(201, 18, 18);
+  box-shadow: 0 0 0 8px rgb(16, 30, 224);
+}

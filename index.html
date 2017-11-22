@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title class="text-center">Fitts Law 2D</title>
+    <link rel='stylesheet' href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-C0X5qw1DlkeV0RDunhmi4cUBUkPDTvUqzElcNWm1NI2T4k8tKMZ+wRPQOhZfSJ9N"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"> Experiment to demonstrate Fitts's Law in 2 Dimensions</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+
+            <div class="col-lg-12">
+                <h3 class="experiment_note text-center" style="margin-top: -10px;">Click the green circles as quickly as you can, avoiding error as much as possible</h3>
+                <h3 class="start_note text-center">Choose your combination of target width and distance and click Start.</h3>
+            </div>
+            <div class="col-lg-6  col-lg-offset-3">
+            <div id="slider-1" class="slider-1">
+                <div id="icon-1" class="icon"></div>
+                <div id="icon-2" class="icon"></div>
+                <div id="icon-3" class="icon"></div>
+                <div id="icon-4" class="icon"></div>
+                <div id="icon-5" class="icon"></div>
+                <div id="icon-6" class="icon"></div>
+                <div id="icon-7" class="icon"></div>
+                <div id="icon-8" class="icon"></div>
+                <div id="icon-9" class="icon"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top:-50px;!important">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="row">
+                <fieldset>
+                    <legend class="text-center">Width and Distance Choices</legend>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <h5 class="text-center">Select Distance</h5>
+
+                            <div id="distance" class="checkbox text-center">
+                                <label>
+                                    <input type="radio" name="distance" value="100" checked="checked"> 100
+                                </label>
+                                <label>
+                                    <input type="radio" name="distance" value="150"> 150
+                                </label>
+                                <label>
+                                    <input type="radio" name="distance" value="200"> 200
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <h5 class="text-center">Select Width</h5>
+                            <div id="width" class="checkbox text-center">
+                                <label>
+                                    <input type="radio" name="width" value="25" checked="checked"> 25
+                                </label>
+                                <label>
+                                    <input type="radio" name="width" value="50"> 50
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-10">
+                            <button type="submit" class="btn btn-success submit" onclick="start()">Start Trial</button>
+                            <a type="button" id="btnExport" class="btn btn-success pull-right">Download Trial Data as CSV</a>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
